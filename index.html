@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="YMGC">
+<head lang="en">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/ionic.css"/>
+  <link rel="stylesheet" href="css/all.css"/>
+  <script src="js/ionic.bundle.js"></script>
+  <script src="js/utilityModule.js"></script>
+  <script src="js/YMGC.js"></script>
+  <title></title>
+</head>
+<body ng-controller="bodyCtrl">
+
+<ion-side-menus>
+  <ion-side-menu side="left">
+    <ul class="list list-inset">
+      <li class="item" ui-sref="LOGIN_TWO"><i class="icon ion-person"></i>个人中心</li>
+      <li class="item" ui-sref="settings"><i class="icon ion-gear-a"></i>设置</li>
+      <li class="item"><i class="icon ion-paper-airplane"></i>切换用户</li>
+      <li class="item" ui-sref="aboutUs"><i class="icon ion-android-bar"></i>关于我们</li>
+      <li class="item" ui-sref="start"><button class="button button-full button-positive">返回首页</button></li>
+    </ul>
+  </ion-side-menu>
+  <ion-side-menu-content>
+    <ui-view>
+
+    </ui-view>
+  </ion-side-menu-content>
+  </ion-side-menus>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<?php
+
+@$aname = $_REQUEST['aname'] or die("用户名是必须的");
+@$apwd = $_REQUEST['apwd'] or die("用户密码是必须的");
+
+$conn = mysqli_connect("127.0.0.1","root","","all_pingzi");
+				mysqli_query($conn,"SET NAMES UTF8");
+
+$sql = "INSERT INTO myapp VALUES(null,'$aname','$apwd')";
+
+$result = mysqli_query($conn,$sql);
+
+if($result===true){
+	echo "注册成功";
+}else{
+	echo "注册失败";
+}
+
+?>

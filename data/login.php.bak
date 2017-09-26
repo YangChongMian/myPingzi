@@ -1,0 +1,28 @@
+<?php
+
+@$aname = $_REQUEST['aname'] or die("用户名是必须的");
+@$apwd = $_REQUEST['apwd'] or die("用户密码是必须的");
+
+$conn = mysqli_connect("127.0.0.1","root","","all_pingzi");
+				mysqli_query($conn,"SET NAMES UTF8");
+
+$sql = "SELECT * FROM myapp WHERE aname='$aname' AND apwd='$apwd'";
+
+$result = mysqli_query($conn,$sql);
+
+$row = mysqli_fetch_assoc($result);
+
+#var_dump($row);
+
+
+
+#if($row!==null){
+#   echo '登录成功';
+#}else{
+#   echo '登录失败';
+#}
+
+
+echo json_encode($row);
+
+?>

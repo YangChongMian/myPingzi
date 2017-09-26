@@ -1,0 +1,85 @@
+div>img{
+  width:100%;
+  height:10%;
+}
+ul{
+  margin:0;
+  padding:0;
+}
+ul li{
+  margin:0;
+  padding:0;
+}
+ul li a img{
+  width:100%;
+}
+body{
+  font-size: 12px;
+}
+
+
+.one,.two,.three,.four{
+  position: relative;
+}
+.one>div,.two>div,.three>div,.four>div{
+  background-color: #fff;
+  opacity: 0.6;
+  width:100%;
+  height:60px;
+  position: absolute;
+  bottom:1px;
+  left:1px;
+  color:#69717d;
+  text-align: center;
+  line-height: 40px;
+}
+
+
+
+
+/****************************start*******************/
+.slider-pager{
+  height:5px;
+}
+
+.title{
+  margin:25px;
+  text-align: center;
+  font-size: 30px;
+  color:#69717d;
+  font-family: 'microsoft yahei';
+  font-weight: bold;
+}
+/*.f-left{*/
+  /*content: '';*/
+  /*display: table;*/
+  /*clear:both;*/
+/*}*/
+.f-left a{
+  width:50%;
+  float:left;
+}
+
+
+
+/****************×¢²á°´Å¥¾ÓÖÐ****************/
+#login_div{
+  position:relative;
+  width:100%;
+  height:100%;
+}
+#login_zhuce{
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-top: -20px;
+  margin-left: -50px;
+}
+
+.margin-top{
+  margin-top:45px;
+}
+
+.bar-subheader .button-bar .button-positive{
+  font-size: 10px;
+}
